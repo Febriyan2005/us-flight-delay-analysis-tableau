@@ -13,7 +13,7 @@ This project explores the drivers of flight delays in the US (2017–2022), focu
 ---
 
 ## 📊 Dataset
-- **Source:** Kaggle — `<paste Kaggle dataset URL here>`  
+- **Source:** Kaggle — `https://www.kaggle.com/datasets/jawadkhattak/us-flight-delay-from-january-2017-july-2022`  
 - **File in this repo:** `data/Airline_Delay_Cause.xlsx`  
 - **Time range:** 2017 – 2022  
 - **Notes on cleaning:**  
@@ -47,7 +47,7 @@ This project explores the drivers of flight delays in the US (2017–2022), focu
 ---
 
 ## 🖼 Dashboard Preview
-![Dashboard Preview](images/dashboard_preview.png)
+![Dashboard Preview](dashboard-overview.png)
 
 **If you want to view interactive version:**  
 - (Recommended) Publish your workbook to Tableau Public and paste the public URL here: `<paste Tableau Public URL here>`  
