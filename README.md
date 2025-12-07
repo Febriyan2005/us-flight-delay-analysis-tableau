@@ -47,7 +47,7 @@ This project explores the drivers of flight delays in the US (2017–2022), focu
 ---
 
 ## 🖼 Dashboard Preview
-![Dashboard Preview](dashboard-overview.png)
+![Dashboard Preview](Images/dashboard-overview.png)
 
 **If you want to view interactive version:**  
 - (Recommended) Publish your workbook to Tableau Public and paste the public URL here: `<paste Tableau Public URL here>`  
