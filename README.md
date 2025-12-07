@@ -1,5 +1,7 @@
 # ✈️ US Flight Delay Analysis (Tableau)
 
+---
+
 ## 🖼 Dashboard Preview
 ![Dashboard Preview](Images/dashboard-overview.png)
 
