@@ -1,0 +1,2456 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <Layers />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Airline_Delay_Cause (Airline_Delay_Cause.csv)' inline='true' name='federated.09n85f11njvo25177qevm0dl73oq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Airline_Delay_Cause.csv' name='excel-direct.1ch88jo1pssy3815h81h81d1pllp'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Pemrograman/Proyek Data Anylist/Clensing data/Airline_Delay_Cause.csv.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1ch88jo1pssy3815h81h81d1pllp' name='Airline_Delay_Cause' table='[Airline_Delay_Cause$]' type='table'>
+          <columns gridOrigin='A1:O10001:no:A1:O10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='integer' name='month' ordinal='1' />
+            <column datatype='date' name='Date' ordinal='2' />
+            <column datatype='string' name='carrier' ordinal='3' />
+            <column datatype='string' name='carrier_name' ordinal='4' />
+            <column datatype='string' name='airport' ordinal='5' />
+            <column datatype='string' name='city' ordinal='6' />
+            <column datatype='string' name='state' ordinal='7' />
+            <column datatype='string' name='airport_name' ordinal='8' />
+            <column datatype='integer' name='arr_delay' ordinal='9' />
+            <column datatype='integer' name='carrier_delay' ordinal='10' />
+            <column datatype='integer' name='weather_delay' ordinal='11' />
+            <column datatype='integer' name='nas_delay' ordinal='12' />
+            <column datatype='integer' name='security_delay' ordinal='13' />
+            <column datatype='integer' name='late_aircraft_delay' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:O10001:no:A1:O10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>carrier</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[carrier]</local-name>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias>carrier</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RID_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>carrier_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[carrier_name]</local-name>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias>carrier_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RID_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>airport</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[airport]</local-name>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias>airport</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RID_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RID_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RID_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>airport_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[airport_name]</local-name>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias>airport_name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RID_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arr_delay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arr_delay]</local-name>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias>arr_delay</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>carrier_delay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[carrier_delay]</local-name>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias>carrier_delay</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weather_delay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weather_delay]</local-name>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias>weather_delay</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nas_delay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nas_delay]</local-name>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias>nas_delay</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>security_delay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[security_delay]</local-name>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias>security_delay</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>late_aircraft_delay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[late_aircraft_delay]</local-name>
+            <parent-name>[Airline_Delay_Cause]</parent-name>
+            <remote-alias>late_aircraft_delay</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Carrier Delay Prencetage' datatype='real' name='[Calculation_350154879363997696]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[carrier_delay]/[arr_delay]' />
+      </column>
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column caption='Airline_Delay_Cause' datatype='table' name='[__tableau_internal_object_id__].[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]' role='measure' type='quantitative' />
+      <column caption='Airport' datatype='string' name='[airport]' role='dimension' type='nominal' />
+      <column caption='Airport Name' datatype='string' name='[airport_name]' role='dimension' type='nominal' />
+      <column caption='Arr Delay' datatype='integer' name='[arr_delay]' role='measure' type='quantitative' />
+      <column caption='Carrier' datatype='string' name='[carrier]' role='dimension' type='nominal' />
+      <column caption='Carrier Delay' datatype='integer' name='[carrier_delay]' role='measure' type='quantitative' />
+      <column caption='Carrier Name' datatype='string' name='[carrier_name]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Late Aircraft Delay' datatype='integer' name='[late_aircraft_delay]' role='measure' type='quantitative' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Nas Delay' datatype='integer' name='[nas_delay]' role='measure' type='quantitative' />
+      <column caption='Security Delay' datatype='integer' name='[security_delay]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Weather Delay' datatype='integer' name='[weather_delay]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[carrier]' derivation='None' name='[none:carrier:nk]' pivot='key' type='nominal' />
+      <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Carrier)' hidden='true' name='[Action (Carrier)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[carrier]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (City,State)' hidden='true' name='[Action (City,State)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[city]' />
+          <groupfilter function='level-members' level='[state]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (MONTH(Date))' hidden='true' name='[Action (MONTH(Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tmn:Date:ok]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='state, city'>
+          <field>[state]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Febriyan/AppData/Local/Temp/TableauTemp/#TableauTemp_16psepl1hl5tgo12lsxrj0597l37.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/17/2025 10:59:12 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Airline_Delay_Cause</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Airline_Delay_Cause</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Airline_Delay_Cause</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>carrier</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[carrier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>carrier</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Airline_Delay_Cause</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>carrier_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[carrier_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>carrier_name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Airline_Delay_Cause</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>airport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[airport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>airport</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Airline_Delay_Cause</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>998</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>city</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Airline_Delay_Cause</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>941</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Airline_Delay_Cause</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>airport_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[airport_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>airport_name</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Airline_Delay_Cause</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>978</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>arr_delay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[arr_delay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>arr_delay</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Airline_Delay_Cause</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11373</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>carrier_delay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[carrier_delay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>carrier_delay</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Airline_Delay_Cause</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6664</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>weather_delay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[weather_delay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>weather_delay</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Airline_Delay_Cause</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2354</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nas_delay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[nas_delay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nas_delay</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Airline_Delay_Cause</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3506</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>security_delay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[security_delay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>security_delay</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Airline_Delay_Cause</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>439</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>late_aircraft_delay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[late_aircraft_delay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>late_aircraft_delay</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Airline_Delay_Cause</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5714</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:city:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Alexandria&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Belleville&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Bullhead City&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cleveland&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Devils Lake&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Fayetteville&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Greensboro/High Point&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Honolulu&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Kalispell&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Lewisburg&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Medford&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Myrtle Beach&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ontario&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Portsmouth&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Sacramento&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Savannah&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Stockton&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Washington&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Aberdeen&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Augusta&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Boston&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Charlotte Amalie&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dayton&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Elmira/Corning&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Garden City&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Hattiesburg/Laurel&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jacksonville&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Lafayette&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Lynchburg&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mobile&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Norfolk&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Philadelphia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Rhinelander&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sanford&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;St. Augustine&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Twin Falls&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Worcester&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Akron&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bangor&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bristol/Johnson City/Kingsport&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Chicago&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Del Rio&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Evansville&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Grand Junction&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Hibbing&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Joplin&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Laredo&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Manhattan/Ft. Riley&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Montgomery&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ogden&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Plattsburgh&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Rochester&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Santa Maria&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;St. Petersburg&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Vernal&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Youngstown/Warren&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Anchorage&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Bethel&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cape Girardeau&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Colorado Springs&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Dothan&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Fort Dodge&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Gulfport/Biloxi&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Idaho Falls&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Key West&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Lihue&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Miami&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;New Haven&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Pago Pago&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Pueblo&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Salt Lake City&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sheridan&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Tampa&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;West Palm Beach/Palm Beach&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Allentown/Bethlehem/Easton&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bellingham&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Burbank&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cody&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Dickinson&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Flagstaff&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Greenville&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Houston&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kansas City&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Lewiston&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Melbourne&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Nantucket&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Orlando&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Prescott&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Saginaw/Bay City/Midland&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Scottsbluff&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sun Valley/Hailey/Ketchum&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Waterloo&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Alamosa&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Barrow&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Brownsville&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Christiansted&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Denver&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Everett&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Grand Rapids&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Hilo&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Juneau&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Las Vegas&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Marquette&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Montrose/Delta&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ogdensburg&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Pocatello&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Rock Springs&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Santa Rosa&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;State College&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Victoria&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Yuma&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Atlanta&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Bloomington/Normal&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Charleston/Dunbar&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Dallas&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;El Paso&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Fresno&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Harrisburg&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jackson&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kotzebue&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Louisville&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Missoula&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Niagara Falls&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Peoria&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Redding&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;San Juan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Spokane&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Tucson&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Williston&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Abilene&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Austin&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Bozeman&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Charlottesville&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Daytona Beach&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Erie&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Gillette&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Hayden&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Jacksonville/Camp Lejeune&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Lake Charles&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Madison&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Moline&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;North Bend/Coos Bay&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Phoenix&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Richmond&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Santa Ana&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;St. Cloud&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Tyler&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Wrangell&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ashland&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Bishop&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Champaign/Urbana&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cordova&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Eagle&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Fort Smith&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hancock/Houghton&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Islip&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kodiak&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Longview&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Minot&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Newburgh/Poughkeepsie&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Pellston&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Raleigh/Durham&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;San Francisco&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sitka&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Traverse City&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Wichita Falls&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Albany&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Baton Rouge&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Brunswick&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cincinnati&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Des Moines&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Fairbanks&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Great Falls&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Hilton Head&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Kahului&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Latrobe&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Martha&apos;s Vineyard&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mosinee&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Oklahoma City&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ponce&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Rockford&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sarasota/Bradenton&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Staunton&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Waco&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Appleton&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Billings&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Casper&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Columbia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Dubuque&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Fort Lauderdale&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Gunnison&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Indianapolis&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Killeen&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Lincoln&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Midland/Odessa&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;New Orleans&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Palm Springs&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pullman&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;San Angelo&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Shreveport&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Texarkana&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;West Yellowstone&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Arcata/Eureka&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Binghamton&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cedar City&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Columbus&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Duluth&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Fort Leonard Wood&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Gustavus&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;International Falls&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;King Salmon&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Little Rock&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Milwaukee&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;New York&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Panama City&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Punta Gorda&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;San Antonio&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sioux City&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Tokeen&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;White Plains&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Aspen&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bismarck/Mandan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Charleston&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Corpus Christi&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Eau Claire&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Fort Wayne&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Harlingen/San Benito&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ithaca/Cortland&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kona&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Los Angeles&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mission/McAllen/Edinburg&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Newport News/Williamsburg&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Pensacola&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Rapid City&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;San Jose&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;South Bend&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Trenton&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Williamsport&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Atlantic City&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Boise&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Charlotte&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Dallas/Fort Worth&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Elko&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Gainesville&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Hartford&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jackson/Vicksburg&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;La Crosse&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Lubbock&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Moab&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Nome&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Petersburg&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Reno&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;San Luis Obispo&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Springfield&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Tulsa&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Wilmington&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Alpena&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bemidji&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Burlington&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cold Bay&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Dillingham&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Flint&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Greer&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Huntsville&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kearney&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lexington&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Memphis&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Nashville&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Owensboro&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Providence&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Saipan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Scranton/Wilkes-Barre&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Syracuse&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Watertown&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Albuquerque&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Beaumont/Port Arthur&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Buffalo&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Clarksburg/Fairmont&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Detroit&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Fargo&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Green Bay&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Hobbs&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Kalamazoo&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Lawton/Fort Sill&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mason City&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Muskegon&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Omaha&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Portland&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Roswell&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sault Ste. Marie&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Stillwater&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Walla Walla&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Adak Island&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bakersfield&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brainerd&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Chattanooga&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Deadhorse&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Escanaba&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Grand Forks&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Hays&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jamestown&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lansing&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mammoth Lakes&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Monroe&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;North Platte&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Pierre&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Riverton/Lander&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Santa Barbara&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;St. George&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Valdosta&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Yakima&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Asheville&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Birmingham&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cedar Rapids/Iowa City&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Concord&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Durango&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Fort Myers&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Hagerstown&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Iron Mountain/Kingsfd&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Knoxville&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Long Beach&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Minneapolis&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Newark&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Pasco/Kennewick/Richland&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Quincy&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;San Diego&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sioux Falls&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Toledo&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Wichita&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Amarillo&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bend/Redmond&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Butte&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;College Station/Bryan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Dodge City&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Fort Collins/Loveland&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Guam&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Hyannis&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ketchikan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Liberal&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Meridian&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;New Bern/Morehead/Beaufort&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Paducah&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Provo&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Salina&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Seattle&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tallahassee&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Wenatchee&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Aguadilla&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Baltimore&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Branson&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cheyenne&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Decatur&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Eugene&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Grand Island&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Helena&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Johnstown&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Laramie&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Manchester&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Monterey&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Oakland&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Pittsburgh&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Roanoke&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Santa Fe&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;St. Louis&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Valparaiso&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Yakutat&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:carrier:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;HA&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;9E&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;DL&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;OO&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;MQ&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;EV&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;YX&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;AA&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;WN&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;F9&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;QX&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;UA&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;YV&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;NK&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;G4&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AS&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;VX&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;OH&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;B6&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[City].[Name]' value='%null%' />
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='year' />
+        <field-sort-custom-order field='month' />
+        <field-sort-custom-order field='Date' />
+        <field-sort-custom-order field='carrier' />
+        <field-sort-custom-order field='carrier_name' />
+        <field-sort-custom-order field='airport' />
+        <field-sort-custom-order field='city' />
+        <field-sort-custom-order field='state' />
+        <field-sort-custom-order field='airport_name' />
+        <field-sort-custom-order field='arr_delay' />
+        <field-sort-custom-order field='carrier_delay' />
+        <field-sort-custom-order field='Calculation_350154879363997696' />
+        <field-sort-custom-order field='weather_delay' />
+        <field-sort-custom-order field='nas_delay' />
+        <field-sort-custom-order field='security_delay' />
+        <field-sort-custom-order field='late_aircraft_delay' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Airline_Delay_Cause' id='Airline!Delay!Cause_B89CB5E8E2DF4989BDCB1D14F054A6F3'>
+            <properties context=''>
+              <relation connection='excel-direct.1ch88jo1pssy3815h81h81d1pllp' name='Airline_Delay_Cause' table='[Airline_Delay_Cause$]' type='table'>
+                <columns gridOrigin='A1:O10001:no:A1:O10001:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='integer' name='month' ordinal='1' />
+                  <column datatype='date' name='Date' ordinal='2' />
+                  <column datatype='string' name='carrier' ordinal='3' />
+                  <column datatype='string' name='carrier_name' ordinal='4' />
+                  <column datatype='string' name='airport' ordinal='5' />
+                  <column datatype='string' name='city' ordinal='6' />
+                  <column datatype='string' name='state' ordinal='7' />
+                  <column datatype='string' name='airport_name' ordinal='8' />
+                  <column datatype='integer' name='arr_delay' ordinal='9' />
+                  <column datatype='integer' name='carrier_delay' ordinal='10' />
+                  <column datatype='integer' name='weather_delay' ordinal='11' />
+                  <column datatype='integer' name='nas_delay' ordinal='12' />
+                  <column datatype='integer' name='security_delay' ordinal='13' />
+                  <column datatype='integer' name='late_aircraft_delay' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.09n85f11njvo25177qevm0dl73oq'>
+      <datasources>
+        <datasource caption='Airline_Delay_Cause (Airline_Delay_Cause.csv)' name='federated.09n85f11njvo25177qevm0dl73oq' />
+      </datasources>
+      <datasource-dependencies datasource='federated.09n85f11njvo25177qevm0dl73oq'>
+        <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+        <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.09n85f11njvo25177qevm0dl73oq].[tmn:Date:qk]' included-values='in-range'>
+        <min>#2017-01-01 00:00:00#</min>
+        <max>#2022-07-01 00:00:00#</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_C063B03669064CB88A9DA419F5808387]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='US Fligth Delay' type='sheet' worksheet='Map Airport in Amerika Serikat' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='US Fligth Delay' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_E87F964CE58A4806972C33FFD5245C91]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='US Fligth Delay' type='sheet' worksheet='Carrier' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='US Fligth Delay' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_19727591FBE3410681BC9C6E049D5DAE]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='US Fligth Delay' type='sheet' worksheet='Carrier Delay Precentage' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='US Fligth Delay' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Carrier'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airline_Delay_Cause (Airline_Delay_Cause.csv)' name='federated.09n85f11njvo25177qevm0dl73oq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09n85f11njvo25177qevm0dl73oq'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Arr Delay' datatype='integer' name='[arr_delay]' role='measure' type='quantitative' />
+            <column-instance column='[carrier_name]' derivation='Attribute' name='[attr:carrier_name:nk]' pivot='key' type='nominal' />
+            <column caption='Carrier' datatype='string' name='[carrier]' role='dimension' type='nominal' />
+            <column caption='Carrier Name' datatype='string' name='[carrier_name]' role='dimension' type='nominal' />
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[carrier]' derivation='None' name='[none:carrier:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[arr_delay]' derivation='Sum' name='[sum:arr_delay:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09n85f11njvo25177qevm0dl73oq].[Action (City,State)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_C063B03669064CB88A9DA419F5808387]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[city]' />
+              <groupfilter function='level-members' level='[state]' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09n85f11njvo25177qevm0dl73oq].[none:carrier:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.09n85f11njvo25177qevm0dl73oq].[sum:arr_delay:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.09n85f11njvo25177qevm0dl73oq].[Action (City,State)]</column>
+            <column>[federated.09n85f11njvo25177qevm0dl73oq].[tmn:Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09n85f11njvo25177qevm0dl73oq].[none:carrier:nk]' />
+              <tooltip column='[federated.09n85f11njvo25177qevm0dl73oq].[attr:carrier_name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.09n85f11njvo25177qevm0dl73oq].[sum:arr_delay:qk]</rows>
+        <cols>[federated.09n85f11njvo25177qevm0dl73oq].[none:carrier:nk]</cols>
+      </table>
+      <simple-id uuid='{2B6133DF-ECC4-4E5F-9F62-BF47C70FD2F5}' />
+    </worksheet>
+    <worksheet name='Carrier Delay Precentage'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airline_Delay_Cause (Airline_Delay_Cause.csv)' name='federated.09n85f11njvo25177qevm0dl73oq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09n85f11njvo25177qevm0dl73oq'>
+            <column caption='Carrier Delay Prencetage' datatype='real' name='[Calculation_350154879363997696]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[carrier_delay]/[arr_delay]' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Arr Delay' datatype='integer' name='[arr_delay]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_350154879363997696]' derivation='Avg' name='[avg:Calculation_350154879363997696:qk]' pivot='key' type='quantitative' />
+            <column caption='Carrier' datatype='string' name='[carrier]' role='dimension' type='nominal' />
+            <column caption='Carrier Delay' datatype='integer' name='[carrier_delay]' role='measure' type='quantitative' />
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09n85f11njvo25177qevm0dl73oq].[Action (Carrier)]'>
+            <groupfilter function='level-members' level='[carrier]' user:ui-action-filter='[Action2_E87F964CE58A4806972C33FFD5245C91]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09n85f11njvo25177qevm0dl73oq].[Action (City,State)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_C063B03669064CB88A9DA419F5808387]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[city]' />
+              <groupfilter function='level-members' level='[state]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09n85f11njvo25177qevm0dl73oq].[Action (City,State)]</column>
+            <column>[federated.09n85f11njvo25177qevm0dl73oq].[Action (Carrier)]</column>
+            <column>[federated.09n85f11njvo25177qevm0dl73oq].[tmn:Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.09n85f11njvo25177qevm0dl73oq].[avg:Calculation_350154879363997696:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.09n85f11njvo25177qevm0dl73oq].[avg:Calculation_350154879363997696:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09n85f11njvo25177qevm0dl73oq].[avg:Calculation_350154879363997696:qk]</rows>
+        <cols>[federated.09n85f11njvo25177qevm0dl73oq].[tmn:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{F284C3B3-063F-41F4-A5DA-1F9AC11B307D}' />
+    </worksheet>
+    <worksheet name='Map Airport in Amerika Serikat'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airline_Delay_Cause (Airline_Delay_Cause.csv)' name='federated.09n85f11njvo25177qevm0dl73oq' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.09n85f11njvo25177qevm0dl73oq'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Airport Name' datatype='string' name='[airport_name]' role='dimension' type='nominal' />
+            <column caption='Arr Delay' datatype='integer' name='[arr_delay]' role='measure' type='quantitative' />
+            <column-instance column='[airport_name]' derivation='Attribute' name='[attr:airport_name:nk]' pivot='key' type='nominal' />
+            <column caption='Carrier' datatype='string' name='[carrier]' role='dimension' type='nominal' />
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[arr_delay]' derivation='Sum' name='[sum:arr_delay:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09n85f11njvo25177qevm0dl73oq].[Action (Carrier)]'>
+            <groupfilter function='level-members' level='[carrier]' user:ui-action-filter='[Action2_E87F964CE58A4806972C33FFD5245C91]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.09n85f11njvo25177qevm0dl73oq].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.09n85f11njvo25177qevm0dl73oq].[Longitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.09n85f11njvo25177qevm0dl73oq].[Latitude (generated)]</column>
+            <column>[federated.09n85f11njvo25177qevm0dl73oq].[Longitude (generated)]</column>
+            <column>[federated.09n85f11njvo25177qevm0dl73oq].[Action (Carrier)]</column>
+            <column>[federated.09n85f11njvo25177qevm0dl73oq].[tmn:Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.09n85f11njvo25177qevm0dl73oq].[Longitude (generated)]' field-type='quantitative' max='-7158810.9582522474' min='-14211513.60902429' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.09n85f11njvo25177qevm0dl73oq].[Latitude (generated)]' field-type='quantitative' max='8241149.9037920032' min='1244273.3188419107' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.09n85f11njvo25177qevm0dl73oq].[none:city:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.09n85f11njvo25177qevm0dl73oq].[none:city:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.09n85f11njvo25177qevm0dl73oq].[none:city:nk]' value='false' />
+            <format attr='omit-on-special' field='[federated.09n85f11njvo25177qevm0dl73oq].[none:state:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.09n85f11njvo25177qevm0dl73oq].[none:state:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.09n85f11njvo25177qevm0dl73oq].[none:state:nk]' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+        <panes customization-axis='layer'>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.09n85f11njvo25177qevm0dl73oq].[none:state:nk]' />
+            </encodings>
+          </pane>
+          <pane generated-title='State' id='0' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.09n85f11njvo25177qevm0dl73oq].[none:state:nk]' />
+              <color column='[federated.09n85f11njvo25177qevm0dl73oq].[sum:arr_delay:qk]' />
+              <geometry column='[federated.09n85f11njvo25177qevm0dl73oq].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+          <pane generated-title='City' id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.09n85f11njvo25177qevm0dl73oq].[none:city:nk]' />
+              <size column='[federated.09n85f11njvo25177qevm0dl73oq].[sum:arr_delay:qk]' />
+              <lod column='[federated.09n85f11njvo25177qevm0dl73oq].[none:city:nk]' />
+              <tooltip column='[federated.09n85f11njvo25177qevm0dl73oq].[attr:airport_name:nk]' />
+              <lod column='[federated.09n85f11njvo25177qevm0dl73oq].[none:state:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2.5966851711273193' />
+                <format attr='mark-transparency' value='193' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09n85f11njvo25177qevm0dl73oq].[Latitude (generated)]</rows>
+        <cols>[federated.09n85f11njvo25177qevm0dl73oq].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{5E789710-0174-4468-A881-E9231A6F1069}' />
+    </worksheet>
+    <worksheet name='Total Ddelay'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airline_Delay_Cause (Airline_Delay_Cause.csv)' name='federated.09n85f11njvo25177qevm0dl73oq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09n85f11njvo25177qevm0dl73oq'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Arr Delay' datatype='integer' name='[arr_delay]' role='measure' type='quantitative' />
+            <column caption='Carrier' datatype='string' name='[carrier]' role='dimension' type='nominal' />
+            <column caption='Carrier Delay' datatype='integer' name='[carrier_delay]' role='measure' type='quantitative' />
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='Late Aircraft Delay' datatype='integer' name='[late_aircraft_delay]' role='measure' type='quantitative' />
+            <column caption='Nas Delay' datatype='integer' name='[nas_delay]' role='measure' type='quantitative' />
+            <column caption='Security Delay' datatype='integer' name='[security_delay]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[arr_delay]' derivation='Sum' name='[sum:arr_delay:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[carrier_delay]' derivation='Sum' name='[sum:carrier_delay:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[late_aircraft_delay]' derivation='Sum' name='[sum:late_aircraft_delay:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[nas_delay]' derivation='Sum' name='[sum:nas_delay:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[security_delay]' derivation='Sum' name='[sum:security_delay:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[weather_delay]' derivation='Sum' name='[sum:weather_delay:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+            <column caption='Weather Delay' datatype='integer' name='[weather_delay]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09n85f11njvo25177qevm0dl73oq].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.09n85f11njvo25177qevm0dl73oq].[sum:arr_delay:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.09n85f11njvo25177qevm0dl73oq].[sum:carrier_delay:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.09n85f11njvo25177qevm0dl73oq].[sum:late_aircraft_delay:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.09n85f11njvo25177qevm0dl73oq].[sum:nas_delay:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.09n85f11njvo25177qevm0dl73oq].[sum:security_delay:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.09n85f11njvo25177qevm0dl73oq].[sum:weather_delay:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.09n85f11njvo25177qevm0dl73oq].[Action (Carrier)]'>
+            <groupfilter function='level-members' level='[carrier]' user:ui-action-filter='[Action2_E87F964CE58A4806972C33FFD5245C91]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09n85f11njvo25177qevm0dl73oq].[Action (City,State)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_C063B03669064CB88A9DA419F5808387]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[city]' />
+              <groupfilter function='level-members' level='[state]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09n85f11njvo25177qevm0dl73oq].[:Measure Names]</column>
+            <column>[federated.09n85f11njvo25177qevm0dl73oq].[Action (City,State)]</column>
+            <column>[federated.09n85f11njvo25177qevm0dl73oq].[Action (Carrier)]</column>
+            <column>[federated.09n85f11njvo25177qevm0dl73oq].[tmn:Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='font-size' value='15' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.09n85f11njvo25177qevm0dl73oq].[:Measure Names]' value='bold' />
+            <format attr='text-align' value='center' />
+            <format attr='font-size' value='11' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.09n85f11njvo25177qevm0dl73oq].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.09n85f11njvo25177qevm0dl73oq].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{E60E4876-776F-46E9-AED0-B6AC59582F35}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='US Fligth Delay'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Airline_Delay_Cause (Airline_Delay_Cause.csv)' name='federated.09n85f11njvo25177qevm0dl73oq' />
+      </datasources>
+      <datasource-dependencies datasource='federated.09n85f11njvo25177qevm0dl73oq'>
+        <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+        <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98416' id='22' param='vert' type-v2='layout-flow' w='99166' x='417' y='792'>
+            <zone h='4059' id='23' type-v2='title' w='99166' x='417' y='792'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='94357' id='20' type-v2='layout-basic' w='99166' x='417' y='4851'>
+              <zone h='90322' id='17' param='horz' type-v2='layout-flow' w='99166' x='417' y='8886'>
+                <zone h='90322' id='15' type-v2='layout-basic' w='99166' x='417' y='8886'>
+                  <zone h='81781' id='7' param='horz' type-v2='layout-flow' w='99166' x='417' y='17427'>
+                    <zone h='81781' id='5' type-v2='layout-basic' w='99166' x='417' y='17427'>
+                      <zone h='81781' id='3' name='Map Airport in Amerika Serikat' w='49581' x='417' y='17427'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='40887' id='11' name='Carrier' w='49585' x='49998' y='17427'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='40894' id='13' name='Carrier Delay Precentage' w='49585' x='49998' y='58314'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='8541' id='14' name='Total Ddelay' show-title='false' w='99166' x='417' y='8886'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='4035' id='19' type-v2='layout-flow' w='99166' x='417' y='4851'>
+                <zone h='4035' id='18' name='Carrier Delay Precentage' param='[federated.09n85f11njvo25177qevm0dl73oq].[tmn:Date:qk]' show-title='false' type-v2='filter' values='database' w='99166' x='417' y='4851'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98230' id='24' param='vert' type-v2='layout-flow' w='99156' x='422' y='885'>
+                <zone h='4535' id='23' type-v2='title' w='99156' x='422' y='885'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='60' h='8483' id='14' is-fixed='true' name='Total Ddelay' show-title='false' w='99156' x='422' y='9428'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='81204' id='3' is-fixed='true' name='Map Airport in Amerika Serikat' w='49577' x='422' y='17911'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40601' id='11' is-fixed='true' name='Carrier' w='49579' x='49999' y='17911'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4008' id='18' name='Carrier Delay Precentage' param='[federated.09n85f11njvo25177qevm0dl73oq].[tmn:Date:qk]' show-title='false' type-v2='filter' values='database' w='99156' x='422' y='5420'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40603' id='13' is-fixed='true' name='Carrier Delay Precentage' w='49579' x='49999' y='58512'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1CE64E61-43B5-4444-8171-B903C372ECA1}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' show-side-pane='false' source-height='30'>
+    <window class='worksheet' name='Map Airport in Amerika Serikat'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09n85f11njvo25177qevm0dl73oq].[sum:arr_delay:qk]' type='color' />
+            <card pane-specification-id='2' param='[federated.09n85f11njvo25177qevm0dl73oq].[sum:arr_delay:qk]' type='size' />
+            <card pane-specification-id='2' param='[federated.09n85f11njvo25177qevm0dl73oq].[none:city:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{BBC79434-EFF3-40E2-9ABE-20255B6AB2E7}' />
+    </window>
+    <window class='worksheet' name='Carrier'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09n85f11njvo25177qevm0dl73oq].[none:carrier:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E62A4C80-F8A3-4556-84E0-C3ED8D06CF10}' />
+    </window>
+    <window class='worksheet' name='Carrier Delay Precentage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{01C36943-DB65-4083-90DC-119A33B42A08}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Total Ddelay'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{067484C5-72FE-4167-83D6-4CE9894FAA2E}' />
+    </window>
+    <window class='dashboard' name='US Fligth Delay'>
+      <viewpoints>
+        <viewpoint name='Carrier'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Carrier Delay Precentage'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Map Airport in Amerika Serikat'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Total Ddelay'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='23' />
+      <simple-id uuid='{B7CD470F-748F-4F60-BE18-744E73ADCC70}' />
+    </window>
+  </windows>
+</workbook>
