@@ -1,6 +1,7 @@
 # ✈️ US Flight Delay Analysis (Tableau)
 
-![Project Banner](images/dashboard_preview.png)
+## 🖼 Dashboard Preview
+![Dashboard Preview](Images/dashboard-overview.png)
 
 **Short description:**  
 Tableau data visualization project analyzing the main causes of flight delays in the United States. The cleaned dataset comes from Kaggle and the visualizations were created in Tableau Desktop.
@@ -43,15 +44,6 @@ This project explores the drivers of flight delays in the US (2017–2022), focu
 - **Carrier Delays** show seasonal peaks (holiday months).  
 - **Weather Delays** smaller in magnitude but spike in extreme events.  
 *(Add 2–3 bullet points with your actual findings; reference charts by screenshot names.)*
-
----
-
-## 🖼 Dashboard Preview
-![Dashboard Preview](Images/dashboard-overview.png)
-
-**If you want to view interactive version:**  
-- (Recommended) Publish your workbook to Tableau Public and paste the public URL here: `<paste Tableau Public URL here>`  
-  Example: `https://public.tableau.com/views/yourworkbookname`
 
 ---
 
